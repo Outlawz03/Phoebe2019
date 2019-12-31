@@ -8,6 +8,7 @@ export const Content = () => {
   const [hintTitle, setHintTitle] = useState("");
   const [hintText, setHintText] = useState("");
   const [activityTitle, setActivityTitle] = useState("");
+  const [showWelcome, setShowWelcome] = useState(false);
 
   useEffect(() => {
     switch(window.location.search) {
@@ -78,17 +79,31 @@ export const Content = () => {
         break;
       default:
         setHintTitle("Start by popping the first balloon and scan the clue inside.");
+        setShowWelcome(true);
     }
     
   },[]);
 
   return (
-    <div className="main">
-      <h1>Happy Birthday Phoebe!!!</h1>
-      <p>Welcome to Phoebe's Birthday Scavanger Hunt.</p>
-      <p>You will have to follow the clues, scan secret messages, and have fun all day long.</p>      
-      <h2>Activity: { activityTitle }</h2>
-      <h2>{ hintTitle }</h2>
-      <p className="lead">{ hintText }</p>
+    <div className="contentContainer">
+      <div className="main">
+        <h1>Happy Birthday Phoebe!!!</h1>
+        { showWelcome && 
+          <div>
+            <p>Welcome to Phoebe's Birthday Scavanger Hunt.</p>
+            <p>You will have to follow the clues, scan secret messages, and have fun all day long.</p>      
+          </div>
+        }
+        {
+          !showWelcome &&
+          <div>
+            <p>Congratulations on finding the next clue.</p>
+            <p>Perform the activity then follow the hint.</p>
+          </div>
+        }
+        <h2>Activity: { activityTitle }</h2>
+        <h2>{ hintTitle }</h2>
+        <p className="lead">{ hintText }</p>
+      </div>
     </div>
   )};
