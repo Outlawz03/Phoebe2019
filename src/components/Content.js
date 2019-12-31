@@ -43,24 +43,24 @@ export const Content = () => {
         setHintText("It may be smelly, but this is where your next clue lies.");
         break;
       case "?hint=7":        
-        setActivityTitle("Do a puzzle.");
+        setActivityTitle("Eat cake.");
         setHintTitle("Hint7");
         setHintText("You have seen some kittens, but meow can you put them back together?");
         break;
       case "?hint=8":        
-        setActivityTitle("Take a nap.");
+        setActivityTitle("Do a puzzle.");
         setHintTitle("Hint8");
         setHintText("This is where you sleep on a beautiful sunny day.");
         break;
       case "?hint=9":        
-        setActivityTitle("Eat dinner.");
+        setActivityTitle("Take a nap.");
         setHintTitle("Hint9");
         setHintText("Every family dinner night you have to clean below this clue location.");
         break;
       case "?hint=10":        
-        setActivityTitle("Eat cake.");
+        setActivityTitle("Eat dinner.");
         setHintTitle("Hint10");
-        setHintText("Now that we have had something sweet we have enough energy to find the next clue. It's located in one of the main ingredients.");
+        setHintText("Now that we have had something sweet we have enough energy to find the next clue. It's a birthday cake must have.");
         break;
       case "?hint=11":        
         setActivityTitle("Laser Tag");
