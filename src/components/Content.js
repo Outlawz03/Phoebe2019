@@ -33,17 +33,17 @@ export const Content = () => {
         setHintText("Are you stuffed yet? You better keep eating until you find the next clue.");
         break;
       case "?hint=5":        
-        setActivityTitle("Get your ears pierced.");
+        setActivityTitle("Check on the kittens.");
         setHintTitle("Hint5");
         setHintText("This is where you sit when you want to get somewhere fast.");
         break;
       case "?hint=6":        
-        setActivityTitle("Check on the kittens.");
+        setActivityTitle("Eat cake.");
         setHintTitle("Hint6");
         setHintText("It may be smelly, but this is where your next clue lies.");
         break;
       case "?hint=7":        
-        setActivityTitle("Eat cake.");
+        setActivityTitle("Get your ears pierced.");
         setHintTitle("Hint7");
         setHintText("You have seen some kittens, but meow can you put them back together?");
         break;
